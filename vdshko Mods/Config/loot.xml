@@ -1,0 +1,6 @@
+<configs>
+	<!-- Motorcycle (Default: 9,4) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,8</set>
+	<!-- 4x4Truck (Default: 9,7) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,10</set>
+</configs>

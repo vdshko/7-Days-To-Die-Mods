@@ -1,0 +1,25 @@
+<configs>	
+	<append xpath="/xui/ruleset">
+		<window_group name="workstation_vdshkoKitchenSink" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<!-- In future plance -->
+			<!-- <window name="windowTools_vdshko_KitchenSink" /> -->
+		</window_group>
+		
+		<window_group name="workstation_vdshkoKitchenStove" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<!-- In future plance -->
+			<!-- <window name="windowTools_vdshko_KitchenStove" /> -->
+		</window_group>
+	</append>
+</configs>

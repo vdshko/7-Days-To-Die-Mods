@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="vdshko Mods" />
+    <Description value="My own improvements" />
+    <Author value="Vlad Shkodich" />
+    <Version value="1.0" compat="A19" />
+  </ModInfo>
+</xml>

@@ -1,0 +1,20 @@
+Key,UsedInMainMenu,Source,Context,Changes,English,Russian
+vdshkoKitchenSink,,items,Item,New,Kitchen Sink,Кухонная раковина
+vdshkoKitchenSinkDesc,,items,Item,New,Use the kitchen sink to draw water.,Используйте кухонную раковину для набора воды.
+vdshkoKitchenSinkSchematic,,items,Item,New,Kitchen Sink Schematic,Схема Кухонной раковины
+vdshkoKitchenSinkSchematicDesc,,items,Item,New,This Schematic unlocks the ability to easy draw water with Kitchen Sink.,Эта схема позволяет получать банки с водой просто используя кухонную раковину.
+vdshkoFaucetBrass,blocks,Block,,,Faucet brass,Латунный смеситель
+vdshkoFaucetBrassDesc,blocks,Block,,,This building block or decoration can not be upgraded to more durable materials.,Этот строительный блок или украшение не могут быть улучшены до более прочных материалов.
+unit_brass,,resources,,Brass,Латунь
+unit_iron,,resources,,,Iron,Железо
+unit_clay,,resources,,,Clay,Глина
+vdshkoKitchenWaterFreezer,,items,Item,New,Kitchen Water Freezer,Кухонный холодильник для напитков
+vdshkoKitchenWaterFreezerDesc,,items,Item,New,Kitchen Water Freezer.,Кухонный холодильник для напитков.
+vdshkoKitchenWaterFreezerSchematic,,items,Item,New,Kitchen Water Freezer Schematic,Схема Кухонного холодильника для напитков
+vdshkoKitchenWaterFreezerSchematicDesc,,items,Item,New,This Schematic unlocks the ability to make Kitchen Water Freezer.,Эта схема позволяет создавать кухонный холодильник для напитков.
+vdshkoKitchenStove,,items,Item,New,Kitchen Stove,Кухонная плита
+vdshkoKitchenStoveDesc,,items,Item,New,Kitchen Stove,Кухонная плита.
+vdshkoKitchenStoveSchematic,,items,Item,New,Kitchen Stove Schematic,Схема Кухонной плиты
+vdshkoKitchenStoveSchematicDesc,,items,Item,New,This Schematic unlocks the ability to make Kitchen Stove.,Эта схема позволяет создавать кухонную плиту.
+vdshkoBrassPlumbing,,items,Item,New,Brass Plumbing, Латунная сантехника
+vdshkoBrassPlumbingDesc,,items,Item,New,Brass Plumbing, Латунная сантехника.

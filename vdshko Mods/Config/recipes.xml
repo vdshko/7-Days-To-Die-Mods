@@ -1,0 +1,300 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="vdshkoKitchenSink" count="1" craft_area="workbench" scrapable="false" craft_time="314">
+			<ingredient name="resourceForgedIron" count="35"/>
+			<ingredient name="resourceMechanicalParts" count="25"/>
+			<ingredient name="resourceCobblestones" count="100"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="resourceWood" count="60"/>
+		</recipe>
+		
+		<recipe name="vdshkoFaucetBrass" count="1" craft_area="forge" craft_tool="toolForgeCrucible" scrapable="false" tags="perkAdvancedEngineering" craft_time="32">
+			<ingredient name="unit_brass" count="240"/>
+			<ingredient name="unit_iron" count="10"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		
+		<recipe name="vdshkoBrassPlumbing" count="1" craft_area="forge" craft_tool="toolForgeCrucible" scrapable="false" tags="perkAdvancedEngineering" craft_time="1">
+			<ingredient name="unit_brass" count="20"/>
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		
+		<recipe name="drinkJarRiverWater" count="1" craft_area="vdshkoKitchenSink" craft_time="2">
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		
+		<recipe name="vdshkoKitchenWaterFreezer" count="1" craft_area="workbench" scrapable="false" craft_time="314">
+			<ingredient name="resourceForgedIron" count="105"/>
+			<ingredient name="resourceMechanicalParts" count="45"/>
+			<ingredient name="resourceBrokenGlass" count="300"/>
+			<ingredient name="resourceMetalPipe" count="8"/>
+			<ingredient name="resourceElectricParts" count="115"/>
+		</recipe>
+		
+		<recipe name="vdshkoKitchenStove" count="1" craft_area="workbench" scrapable="false" craft_time="314">
+			<ingredient name="resourceForgedIron" count="78"/>
+			<ingredient name="resourceMechanicalParts" count="44"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="resourceElectricParts" count="25"/>
+			<ingredient name="resourceCobblestones" count="100"/>
+		</recipe>
+		
+		<recipe name="drinkJarGrainAlcohol" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolBeaker">
+			<ingredient name="foodCornMeal" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkJarBoiledWater" count="1" craft_area="vdshkoKitchenStove" craft_time="40" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+		<recipe name="drinkJarPureMineralWater" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<ingredient name="resourceCoal" count="1"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+		</recipe>
+		<recipe name="drinkJarCoffee" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceGunPowder" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceGunPowder"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkJarGoldenRodTea" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkJarGrandpasAwesomeSauce" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="casinoCoin" count="50"/>
+			<ingredient name="foodHoney" count="5"/>
+			<ingredient name="foodCropMushrooms" count="5"/>
+			<ingredient name="ammoGasCan" count="10"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="perc_add" value="-.2" tags="casinoCoin,foodHoney,foodCropMushrooms,ammoGasCan"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanDogfood" count="2"/>
+			<ingredient name="drinkJarRedTea" count="2"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<ingredient name="drinkJarBeer" count="1"/>
+		</recipe>
+		<recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCornMeal" count="5"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCornMeal,foodCropBlueberries"/>
+			</effect_group>
+		</recipe>
+		<recipe name="drinkJarRedTea" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drinkJarRiverWater" count="1" craft_area="vdshkoKitchenStove" tags="perkMasterChef">
+			<ingredient name="resourceSnowBall" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<recipe name="drinkJarYuccaJuice" count="1" craft_area="vdshkoKitchenStove" tags="perkMasterChef">
+			<ingredient name="foodCropYuccaFruit" count="2"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
+		<recipe name="drugAntibiotics" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolBeaker" tags="learnable">
+			<ingredient name="foodMoldyBread" count="4"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="drugHerbalAntibiotics" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="learnable">
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="foodCropMushrooms" count="3"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="3"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodBaconAndEggs" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodEgg" count="2"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodBakedPotato" count="1" craft_area="vdshkoKitchenStove" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPotato" count="1"/>
+		</recipe>
+		<recipe name="foodBlueberryPie" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropBlueberries" count="5"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodCropBlueberries"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodPumpkinPie" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPumpkin" count="2"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodPumpkinCheesecake" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+		<recipe name="foodPumpkinBread" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodBoiledMeat" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodCanSham" count="5" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="drinkCanEmpty" count="5"/>
+			<ingredient name="foodRottingFlesh" count="5"/>
+			<ingredient name="resourceBone" count="5"/>
+			<ingredient name="resourceAnimalFat" count="5"/>
+			<ingredient name="resourceAcid" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRottingFlesh,resourceBone,resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodCharredMeat" count="1" craft_area="vdshkoKitchenStove" tags="perkMasterChef">
+			<ingredient name="foodRawMeat" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodChiliDog" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanChili" count="1"/>
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCornBread" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodCornBread" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodCornOnTheCob" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodEggBoiled" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodFishTacos" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanSalmon" count="1"/>
+			<ingredient name="foodCornMeal" count="2"/>
+		</recipe>
+		<recipe name="foodGrilledMeat" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodHoboStew" count="1"  craft_time="65" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRottingFlesh" count="10"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-2" tags="foodRottingFlesh"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodMeatStew" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodGumboStew" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanBeef" count="1"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="foodCanStock" count="1"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodShepardsPie" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanLamb" count="1"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="foodCropPotato" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodSpaghetti" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanBeef" count="1"/>
+			<ingredient name="foodCanPasta" count="1"/>
+			<ingredient name="foodCropMushrooms" count="1"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodTunaFishGravyToast" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanTuna" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceAnimalFat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodShamChowder" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanSham" count="1"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodSteakAndPotato" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="resourceAnimalFat" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
+			</effect_group>
+		</recipe>
+		<recipe name="foodVegetableStew" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodCropCorn" count="2"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="resourceGlue" count="1" craft_area="vdshkoKitchenStove" craft_tool="toolCookingPot" tags="perkAdvancedEngineering">
+			<ingredient name="resourceBone" count="7"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,5" operation="base_add" value="-1" tags="resourceBone"/>
+			</effect_group>
+		</recipe>
+	</append>
+</configs>
